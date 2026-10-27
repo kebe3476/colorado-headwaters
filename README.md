@@ -1,6 +1,6 @@
 # Headwaters: Colorado Snow to Rivers
 
-An animated map of Colorado's water supply: snow building and melting across the mountains, rivers rising as the melt arrives, and reservoirs filling downstream, for every water year since 2003. It runs on an Airflow, Databricks (Delta Lake), and dbt pipeline that backfills full history and then updates daily. Work in progress; see Status.
+An animated map of Colorado's water supply: snow building and melting across the mountains, rivers rising as the melt arrives, and reservoirs filling downstream, for every water year since October 2004. It runs on an Airflow, Databricks (Delta Lake), and dbt pipeline that backfills full history and then updates daily. Work in progress; see Status.
 
 <!-- The only public doc in this repo. Never name or link internal files. Keep in sync with the design doc. -->
 
@@ -22,7 +22,7 @@ Snow comes from SNODAS, a daily national snow model on a roughly 1 km grid. Each
 
 | Source | What it provides |
 |---|---|
-| NOAA SNODAS | Daily modeled snow water equivalent, depth, and melt, ~1 km grid, 2003 onward |
+| NOAA SNODAS | Daily modeled snow water equivalent, depth, and melt, ~1 km grid, October 2004 onward |
 | NRCS SNOTEL | Measured snow at mountain stations, used to validate SNODAS |
 | USGS Water Data APIs | Daily river flow at stream gauges |
 | Bureau of Reclamation RISE | Reservoir storage, elevation, and releases |

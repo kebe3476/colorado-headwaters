@@ -1,0 +1,22 @@
+# Internal docs: every Markdown file at the repo root except README.md.
+# Anchored to the root so dbt docs and other Markdown in subfolders stay tracked.
+/*.md
+!/README.md
+
+# Planning material, not part of this repo
+/headwaters-prototype.zip
+
+# Python and dbt build output
+__pycache__/
+.venv/
+target/
+dbt_packages/
+logs/
+
+# Claude Code local config
+.claude/
+
+# Credentials, never commit
+.env
+.env.*
+!.env.example
